@@ -5,18 +5,77 @@ It is defined as the symbol that is responsible for a particular operation betwe
 >>Arithmetic operators 
 	+ Addition, - subtraction, * multiplication, / division, % modulus, // floor division, ** exponential
 
+x = 15
+y = 4
+
+print('Sum of given integers:', x+y)
+print('Subtraction of given integers:', x-y)
+print('Multiplication of given integers:', x*y)
+print('Division of given integers:', x/y)
+print('Flooor division of given integers:', x//y)
+print('Exponential of given integers:', x**y)
 
 >>Assignment operators
 	= is x=5,  += is x=x+5,  -= is x=x-5,  *= is x=x*5,  /= is x=x/5,  %= is x=x%5,  
 		//=,  **=,  &=,  |=,  ^=,  <<=,   >>=
+  
+a = 10
+  
+# To assign values
+b = a
+print("Post value assignment:", b)
+  
+# To add and assign value
+b += a
+print("Post addition and assignment:", b)
+  
+# To subtract and assign value
+b -= a
+print("Post subtraction and assignment:", b)
+  
+# To multiply and assign
+b *= a
+print("Post multiplication and assignment:", b)
+
+
 >>Comparison/relational operators
 	== is equals,  != is not equal,  > is greater than,  < is lesser than,  >= is greater than or equal to,  <= is lesser than or equal to
+ 
+a = 13
+b = 33
+
+print("Is a greater than b:", a > b)
+print("Is a lesser than b:", a < b)
+print("Is a equal to b:", a == b)
+  
+	# a != b is True
+print(a != b) 
+	# a >= b is False
+print(a >= b) 
+	# a <= b is True
+print(a <= b)
+
 >>Logical operators
 	'and' returns True if both values are are true, 'or'  returns True if one statement is true, 'not' will reverse the result
+
+a = True
+b = False
+print(a and b)
+print(a or b)
+print(not a)
+
 >>Boolean Operators
-	True and False. bool is not same as logical****
+	True and False.
+ 
 >>Identity operators
 	'is' returns True if both variables are the same object,  'is not' returns True if both variables are not the same object
+a = 10
+b = 20
+c = a
+  
+print(a is not b)
+print(a is c)
+
 >>Bitwise operators
 	These are used to compare binary numbers
 		& - AND - Sets each bit to 1 if both bits are 1
@@ -25,9 +84,33 @@ It is defined as the symbol that is responsible for a particular operation betwe
 		~ - NOT - Inverts all the bits
 		<< - Zero fill left shift - Shift left by pushing zeros in from the right and let the leftmost bits fall off
 		>> - Signed right shift - Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+a = 10
+b = 4
+  
+print("Bitwise AND operation:", a&b)
+print("Bitwise OR operation:", a|b)
+print("Bitwise NOT operation:", ~a)
+print("Bitwise XOR operation:", a^b)
+print("Bitwise right shift operation:", a >> 2)
+print("Bitwise right shift operation:", a << 2)
+
 >>Membership Operators
     Membership operators (in) and (not in) are used to check whether an item is present in the sequence or not. They return True or False.
     For example - 'la' in "Manilla" evaluates to True and 'a' not in 'all' evaluates to False.
+
+x = 24
+y = 20
+list = [10, 20, 30, 40, 50]
+  
+if (x not in list):
+    print("x is NOT present in given list")
+else:
+    print("x is present in given list")
+  
+if (y in list):
+    print("y is present in given list")
+else:
+    print("y is NOT present in given list")
 
 
 2.  == vs is 
